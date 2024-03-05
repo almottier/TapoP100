@@ -8,6 +8,8 @@ version 1.2.1. It also supports the old authentication method.
 
 Most of the code originates from [OctoPrint-PSUControl-Tapo](https://github.com/dswd/OctoPrint-PSUControl-Tapo).
 
+Make sure the password of your Tapo account adheres to Tapo's security policy otherwise you'll get a 1003 error (bad login). Currently it requires 2 types of characters (letters, numbers, capitals, symbols).
+
 ## Installation
 
 PyP100 can be installed using the package manager [pip](https://pip.pypa.io/en/stable/).
