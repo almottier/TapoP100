@@ -86,7 +86,8 @@ class Switchable(Device):
         return self._get_device_info()["device_on"]
 
     def set_status(self, status: bool):
-        return self._set_device_info({"device_on": status})
+        mac = self._get_device_info()["mac"]
+        return self._set_device_info({"device_on": status, "terminalUUID": mac})
 
     def turnOn(self):
         return self.set_status(True)
