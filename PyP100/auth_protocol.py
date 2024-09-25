@@ -51,6 +51,10 @@ class AuthProtocol:
             self.Initialize()
         payload = {"method": method}
         if params:
+            # P105 requires terminalUUID in payload
+            if "terminalUUID" in params.keys():
+                payload["terminalUUID"] = params["terminalUUID"]
+                del params["terminalUUID"]
             payload["params"] = params
         log.debug(f"Request: {payload}")
         # Encrypt payload and execute call
