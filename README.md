@@ -16,8 +16,8 @@ PyP100 can be installed using the package manager [pip](https://pip.pypa.io/en/s
 ```bash
 pip install git+https://github.com/almottier/TapoP100.git@main
 ```
-
-> **Note:** If you previously installed PyP100 from another source, use `--force-reinstall` to ensure you get this version:
+> [!NOTE]
+> If you previously installed PyP100 from another source, use `--force-reinstall` to ensure you get this version:
 > ```bash
 > pip install --force-reinstall git+https://github.com/almottier/TapoP100.git@main
 > ```
