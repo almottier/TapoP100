@@ -9,6 +9,8 @@ PyP100 is a Python library for controlling TP-Link Tapo smart devices including 
 >
 > Go to: **Me > Third-Party Services > Third-Party Compatibility** and toggle it on.
 
+Make sure the password of your Tapo account adheres to Tapo's security policy otherwise you'll get a 1003 error (bad login). Currently it requires 2 types of characters (letters, numbers, capitals, symbols).
+
 ## Installation
 
 PyP100 can be installed using the package manager [pip](https://pip.pypa.io/en/stable/).
